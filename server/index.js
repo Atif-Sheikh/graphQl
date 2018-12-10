@@ -5,6 +5,7 @@ const cors = require('cors')
 const mongoose = require('mongoose');
 const app = express();
 
+mongoose.connect("mongodb url")
 
 mongoose.connection.once('open',() => {
     console.log('connected to database')
